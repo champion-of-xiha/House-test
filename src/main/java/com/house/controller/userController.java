@@ -20,6 +20,7 @@ public class userController {
 	@RequestMapping("/InsertUser")
 	public String InsertUser() {
 		System.out.println("requestmapping");
+		System.out.println("加油！");
 		User user=new User("tzy", 18);
 		userService.InsertUser(user);
 		return "NewFile";
